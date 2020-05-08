@@ -17,10 +17,10 @@
 import 'dart:async';
 import 'dart:core';
 
-import 'package:flutter_sound/flutter_sound.dart';
-import 'package:flutter_sound/track_player.dart';
-import 'package:flutter_sound/flutter_sound_recorder.dart';
-import 'package:flutter_sound/flutter_sound_player.dart';
+import 'package:flutter_sound_lite/flutter_sound.dart';
+import 'package:flutter_sound_lite/track_player.dart';
+import 'package:flutter_sound_lite/flutter_sound_recorder.dart';
+import 'package:flutter_sound_lite/flutter_sound_player.dart';
 
 import 'flutter_ffmpeg.dart';
 

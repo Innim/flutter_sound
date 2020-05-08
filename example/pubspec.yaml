@@ -12,7 +12,7 @@ version: 1.0.0+1
 dependencies:
   flutter:
     sdk: flutter
-  flutter_sound:
+  flutter_sound_lite:
     path: ../
 
   # The following adds the Cupertino Icons font to your application.

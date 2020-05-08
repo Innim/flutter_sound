@@ -24,11 +24,11 @@ import 'package:path_provider/path_provider.dart' ;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart' show DateFormat;
-import 'package:flutter_sound/flauto.dart';
-import 'package:flutter_sound/flutter_sound_player.dart';
-import 'package:flutter_sound/flutter_sound.dart';
-import 'package:flutter_sound/track_player.dart';
-import 'package:flutter_sound/flutter_sound_recorder.dart';
+import 'package:flutter_sound_lite/flauto.dart';
+import 'package:flutter_sound_lite/flutter_sound_player.dart';
+import 'package:flutter_sound_lite/flutter_sound.dart';
+import 'package:flutter_sound_lite/track_player.dart';
+import 'package:flutter_sound_lite/flutter_sound_recorder.dart';
 
 enum t_MEDIA {
   FILE,
