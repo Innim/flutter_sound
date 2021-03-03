@@ -150,8 +150,22 @@ public class FlautoRecorderMedia
 		{
 			mediaRecorder.reset();
 			mediaRecorder.setAudioSource (audioSource );
-			int androidEncoder      = codecArray[ codec.ordinal () ];
-			int androidOutputFormat = formatsArray[ codec.ordinal () ];
+			int androidEncoder = 0;
+			int androidOutputFormat = 0;
+
+			// Check the SDK version. If Android 5 and lower
+			// set androidEncoder and androidOutputFormat manually.
+			if ( Build.VERSION.SDK_INT <= 21 )
+			{
+                 androidEncoder = MediaRecorder.AudioEncoder.DEFAULT;
+                 androidOutputFormat = MediaRecorder.AudioEncoder.DEFAULT;
+			}
+			else {
+				androidEncoder      = codecArray[ codec.ordinal () ];
+				androidOutputFormat = formatsArray[ codec.ordinal () ];
+			}
+
+
 			mediaRecorder.setOutputFormat ( androidOutputFormat );
 
 			if ( path == null )
